@@ -36,8 +36,5 @@ var loading = {
                 $(this).dequeue();
             });
         }
-    },
-    setImage: function(imgLocation){
-        loading.img = imgLocation;
     }
 };
