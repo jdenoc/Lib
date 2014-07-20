@@ -2,7 +2,7 @@
 /**
  * Author: Denis O'Connor
  */
-class PDO_Connecion{
+class PDO_Connection{
 
     private $_db;
     private $_debug;

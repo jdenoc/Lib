@@ -11,6 +11,7 @@ class Cypher{
     private $_iv_size;
     private $_json_file;
     private $_fail = false;
+    private $_error_title = 'CYPHER ERROR:';
     private $_error_msg = '';
 
     /**
@@ -85,6 +86,7 @@ class Cypher{
             } else {
                 $this->_fail = true;
                 $this->_error_msg = 'User key file not found';
+                error_log($this->_error_title.' '.$this->_error_msg, 0);
             }
         }
     }
