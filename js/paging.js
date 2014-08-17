@@ -10,8 +10,8 @@ var paging = {
     current: 0,
     next: function(){
         paging.current++;
-        paging.nextObj.show().val(paging.current-1);
-        paging.prevObj.val( paging.current+1 );
+        paging.prevObj.show().val(paging.current-1);
+        paging.nextObj.val( paging.current+1 );
         if((paging.current+1)*paging.limit >= paging.totalElements){
             paging.nextObj.hide();
         }
